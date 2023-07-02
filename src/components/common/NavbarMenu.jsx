@@ -8,24 +8,26 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 const NavbarMenu = () => {
   return (
     <>
-      {['md'].map((expand) => (
+      {
         <Navbar
-          key={expand}
-          expand={expand}
+          key="md"
+          expand="md"
           className="bg-body-tertiary mb-3"
           sticky="top"
         >
           <Container fluid>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
             <Navbar.Brand href="#">Tienda</Navbar.Brand>
-
+            <Nav.Link href="#" className="pe-3 d-md-none">
+              Ir a la Tienda
+            </Nav.Link>
             <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              id={`offcanvasNavbar-expand-md`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-md`}
               placement="start"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
                   Tienda
                 </Offcanvas.Title>
               </Offcanvas.Header>
@@ -48,7 +50,7 @@ const NavbarMenu = () => {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-      ))}
+      }
     </>
   );
 };
