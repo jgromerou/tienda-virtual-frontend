@@ -1,0 +1,85 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "idCategoria": "quest",
+      "nombre": "Meta Quest Pro",
+      "descripcion": "La tecnología de visor más avanzada mejora el trabajo, la creatividad y la colaboración.",
+      "detalle": "Nuestro visor más avanzado hasta el momento. Una forma completamente nueva de trabajar, crear y colaborar.",
+      "precio": 1499.99,
+      "stock": 30,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264563/tienda-virtual/metaquestpro-removebg-preview_tuixaq.png"
+    },
+    {
+      "id": 2,
+      "idCategoria": "quest",
+      "nombre": "Meta Quest 2",
+      "descripcion": "Este visor de vanguardia está repleto de todo tipo de experiencias de juego divertidas y emocionantes.",
+      "detalle": "Cientos de juegos destacados, experiencias únicas y una comunidad de usuarios en crecimiento te esperan en Meta Quest 2.",
+      "precio": 399.99,
+      "stock": 20,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264642/tienda-virtual/metaquest2-removebg-preview_sn4mjw.png"
+    },
+    {
+      "id": 3,
+      "idCategoria": "portal",
+      "nombre": "Meta Portal TV",
+      "descripcion": "Habla con tus personas favoritas en la pantalla más grande que tengas.",
+      "detalle": "Ve a tus seres queridos con más claridad en esta época tan especial y durante todo el año.",
+      "precio": 49,
+      "stock": 15,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264563/tienda-virtual/television_grsuoc.png"
+    },
+    {
+      "id": 4,
+      "idCategoria": "portal",
+      "nombre": "Meta Portal 10",
+      "descripcion": "Pantalla de 10 pulgadas diseñada para adaptarse a tu hogar.",
+      "detalle": "Siente que estás ahí en los momentos más importantes y todos los días.",
+      "precio": 49,
+      "stock": 30,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264563/tienda-virtual/10in_uso70k.png"
+    },
+    {
+      "id": 5,
+      "idCategoria": "portal",
+      "nombre": "Meta Portal Go",
+      "descripcion": "Una batería incorporada y una pantalla de 10 pulgadas que puedes trasladar a cualquier habitación.",
+      "detalle": "Compra un Meta Portal Go y obtén una base de carga para Portal Go adicional gratis cuando lo agregues al carrito*.",
+      "precio": 79,
+      "stock": 7,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264563/tienda-virtual/go_snmn8w.png"
+    },
+    {
+      "id": 6,
+      "idCategoria": "portal",
+      "nombre": "Meta Portal Plus",
+      "descripcion": "Una pantalla de 14 pulgadas para vivir intensamente cada momento.",
+      "detalle": "Celebra con tus seres queridos, estén lejos o cerca.",
+      "precio": 299,
+      "stock": 20,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264563/tienda-virtual/plus_pb0nxw.png"
+    },
+    {
+      "id": 7,
+      "idCategoria": "glasses",
+      "nombre": "Ray-Ban Stories | Wayfarer",
+      "descripcion": "Un marco clásico ideal para cualquier época.",
+      "detalle": "Mantente en el momento con un auténtico ícono de la moda",
+      "precio": 299,
+      "stock": 10,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264562/tienda-virtual/rayban-round_cugsot.png"
+    },
+
+    {
+      "id": 8,
+      "idCategoria": "glasses",
+      "nombre": "Ray-Ban Stories | Meteor",
+      "descripcion": "Diseñado en la década de 1960 como la versión angular de un clásico.",
+      "detalle": "Captura el mundo tal como lo ves",
+      "precio": 379,
+      "stock": 21,
+      "img": "https://res.cloudinary.com/dvcq6vatc/image/upload/v1688264562/tienda-virtual/rayban-meteor_ovtjdg.png"
+    }
+  ]
+}
