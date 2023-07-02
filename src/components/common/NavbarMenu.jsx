@@ -17,10 +17,9 @@ const NavbarMenu = () => {
         >
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+
             <Navbar.Brand href="#">Tienda</Navbar.Brand>
-            <Nav.Link href="#" className="pe-3 d-md-none">
-              Ir a la Tienda
-            </Nav.Link>
+
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-md`}
               aria-labelledby={`offcanvasNavbarLabel-expand-md`}
@@ -33,9 +32,6 @@ const NavbarMenu = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#" className="pe-3">
-                    Ir a la Tienda
-                  </Nav.Link>
                   <Form className="d-flex my-1">
                     <Form.Control
                       type="search"
@@ -48,6 +44,9 @@ const NavbarMenu = () => {
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
+            <Nav.Link href="#" className="pe-3">
+              Ir a la Tienda
+            </Nav.Link>
           </Container>
         </Navbar>
       }
