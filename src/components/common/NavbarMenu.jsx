@@ -5,7 +5,24 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+
+import lightModeIcon from '../../assets/images/light-mode.svg';
+import darkModeIcon from '../../assets/images/dark-mode.svg';
+import { useState } from 'react';
+import { setTheme } from '../../utils/theme';
+
 const NavbarMenu = () => {
+  const themeLocalStorage = localStorage.getItem('theme');
+  const [darkMode, setDarkMode] = useState(
+    themeLocalStorage === 'dark' ? true : false
+  );
+
+  const toggleDarkMode = () => {
+    darkMode
+      ? (setTheme('light'), localStorage.setItem('theme', 'light'))
+      : (setTheme('dark'), localStorage.setItem('theme', 'dark'));
+    setDarkMode(!darkMode);
+  };
   return (
     <>
       {
@@ -44,6 +61,16 @@ const NavbarMenu = () => {
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
+            <Button
+              variant="secondary"
+              className={`${darkMode ? 'bg-dark' : 'bg-light'} me-3`}
+              onClick={toggleDarkMode}
+            >
+              <img
+                src={darkMode ? darkModeIcon : lightModeIcon}
+                alt={darkMode ? 'lightMode' : 'darkMode'}
+              />
+            </Button>
             <Nav.Link href="#" className="pe-3">
               Ir a la Tienda
             </Nav.Link>
